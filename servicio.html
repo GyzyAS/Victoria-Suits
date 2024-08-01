@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Suits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="index.html" class="logo">VS</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icon" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicio.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="reservaciones.html">Reservaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+            <div class="header-content container">
+                <div class="header-txt">
+                    <h1>Elige tu servicio de preferencia</h1>
+                    <p>
+                        Nuestros servicios están diseñados para brindar una experiencia excepcional y satisfacer todas sus necesidades durante su estancia. Disfrute de una variedad de comodidades de primer nivel, que incluyen:
+                        
+                        
+                        *Recepción 24 horas: Atención y asistencia en todo momento.
+                        *Servicio a la habitación: Disfrute de deliciosas comidas y bebidas sin salir de su suite.
+                        *Wi-Fi de alta velocidad: Conexión rápida y segura en todo el hotel.
+                        *Spa y gimnasio: Relájese y manténgase en forma con nuestros servicios de bienestar y fitness.
+                        *Centro de negocios: Espacios equipados para sus reuniones y necesidades laborales.
+                        *Servicio de conserjería: Asistencia personalizada para reservas, tours y recomendaciones locales.
+                        *Limpieza diaria: Mantenga su suite impecable con nuestro servicio de limpieza.
+                        *Transporte al aeropuerto: Comodidad y seguridad en sus traslados.
+                        Cada detalle está pensado para ofrecerle una estancia inolvidable.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="images">
+            <div class="swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/hotel.png" alt="">
+                        <h3>Hotel</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/bar.png" alt="">
+                        <h3>Bar</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/comedor.png" alt="">
+                        <h3>Comedor</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/spa.png" alt="">
+                        <h3>Spa</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/piscina.png" alt="">
+                        <h3>Piscina</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    
+    </header>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+        
+        <script>
+            var swiper = new Swiper(".swiper", {
+                slidesPerView: 1,
+                centeredSlides:true,
+                loop:true,
+                spaceBetween: 10,
+                grabCursor: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                breakpoints : {
+                    991: {
+                        slidesPerView: 3
+                    }
+                }
+            
+            });
+        </script>
+</body>
+</html>
